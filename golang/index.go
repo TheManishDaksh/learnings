@@ -1,13 +1,11 @@
-// first install go runtime
-
 package main
 
-import (
-	"fmt"
-
-	"rsc.io/quote"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(quote.Go())
+	var username string = "wagslane"
+	var password string = "noman"
+
+	// don't edit below this line
+	fmt.Println("Authorization: Basic", username+":"+password)
 }
