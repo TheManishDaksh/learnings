@@ -66,7 +66,7 @@
 //    return fibonacci(num-2) + fibonacci(num-1);
 //  }
 //  console.log(fibonacci(5));
- 
+
 
 
 //4. Reverse a string → reverse("manish") = "hsinam"
@@ -93,3 +93,82 @@
 //     return false;
 // }
 // console.log(palindrome("manish"));
+
+// print 1 to n
+
+// let value = 1;
+// function print(n){
+//   console.log(value);
+//   if(value >= n){
+//     console.log("value exceed");
+//     return;
+//   }
+//   value++;
+//   print(n);
+// }
+
+// function main(){
+//   print(5);
+// }
+// main();
+
+
+// print n to 1
+// let value = 1;
+// function print(n){
+//     console.log(n);
+//     if(value >= n){
+//         console.log("value exceed");
+//         return;
+//     }
+//     n--;
+//     print(n);
+// }
+
+// function main(){
+//     print(7)
+// }
+// main();
+
+
+// Sum of array elements → [1,2,3,4] → 10
+
+// let array = [1, 2, 3, 4];
+// let sum = 0;
+// function sumOfArray(index = 0) {
+//     if (array.length == index) {
+//         console.log("array exceed");
+//         return;
+//     }
+//     sum = sum + array.at(index);
+//     index++;
+//     console.log(sum);
+//     sumOfArray(index);
+// }
+
+// function main() {
+//     sumOfArray()
+// }
+// main();
+
+
+// the second way 
+
+// let array = [1, 2, 3, 4];
+
+// function sumOfArray(index = 0) {
+//     if (index === array.length) {
+//         console.log("array exceed");
+//         return 0;
+//     }
+//     return array[index] + sumOfArray(index + 1);
+// }
+
+// function main() {
+//     let total = sumOfArray();
+//     console.log(typeof total);
+
+//     console.log(total);
+// }
+// main();
+
